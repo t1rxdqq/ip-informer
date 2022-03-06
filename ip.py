@@ -85,6 +85,8 @@ def ip(ip_add):
             url=f"https://maps.google.com/maps?q={lat}+{lon}&client=ms-android-hct&sxsrf=APq-WBsdMGbumlrSiADJZN6BwyA_iy1FQA:1646497897127&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAM6BwgAEEcQsAM6BwgjEOoCECdKBAhBGABQxRBYxRBgtxhoAnACeACAAfgCiAGCBJIBBzAuMS4wLjGYAQCgAQGwAQ_IAQjAAQE&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiBls2iuq_2AhUGmYsKHYSGDuoQ_AUoAXoECAEQAw"
             webbrowser.open(url, new=2)
             print('\033[0m')
+            os.system('cls' if os.name == 'nt' else 'clear')
+            main_menu(input(mmWords))
         else:
             print('\033[0m')
             os.system('cls' if os.name == 'nt' else 'clear')
